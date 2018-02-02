@@ -27,12 +27,12 @@ public class ValidatorTests {
 
     @Test
     public void shouldNotValidateWhenFirstNameEmpty() {
-
+//code for petclinic application
         LocaleContextHolder.setLocale(Locale.ENGLISH);
         Person person = new Person();
         person.setFirstName("");
         person.setLastName("smith");
-
+       
         Validator validator = createValidator();
         Set<ConstraintViolation<Person>> constraintViolations = validator.validate(person);
 
